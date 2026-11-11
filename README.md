@@ -7,5 +7,5 @@ No documento [Modelo LATEX de Nota Técnica do LNA](https://www.gov.br/lna/pt-br
 
 
 <div align="center">
-  <img src="src/Fig/capa.png" alt="capa" width="500px">
+  <img src="src/Fig/capa.png" alt="capa" width="400px">
 </div>
