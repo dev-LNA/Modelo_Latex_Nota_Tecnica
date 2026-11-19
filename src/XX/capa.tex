@@ -6,28 +6,31 @@
 
 
 \begin{center}
-{\Large Notas Técnicas do Laboratório Nacional de Astrofísica}
+    {\Large Notas Técnicas do Laboratório Nacional de Astrofísica}
 
-\vspace{6cm}
+    \vspace{6cm}
 
-%Título da nota técnica - Editar no arquivo info.tex
-{\LARGE \textbf{\titulonotatecnica}}
+    %Título da nota técnica - Editar no arquivo info.tex
+    {\LARGE \textbf{\titulonotatecnica}}
 
-\hfill
+    \hfill
 
-\vspace{1cm}
+    \vspace{1cm}
 
-%Autor da nota técnica - Editar no arquivo info.tex
-{\large \ifnum\value{numerodeautores}=1 \autornotatecnica 
-\else \ifnum\value{numerodeautores}=2 \autornotatecnica $\,$ \& \segundoautor \else \ifnum\value{numerodeautores}=3 \autornotatecnica, \segundoautor$\,$ \& \terceiroautor \else \ifnum\value{numerodeautores}=4 \autornotatecnica, \segundoautor, \terceiroautor $\,$ \& \quartoautor \fi \fi \fi \fi
-}
+    %Autor da nota técnica - Editar no arquivo info.tex
+    {\large \ifnum\value{numerodeautores}=1 \autornotatecnica%
+        \else \ifnum\value{numerodeautores}=2 \autornotatecnica, \& \segundoautor%
+            \else \ifnum\value{numerodeautores}=3 \autornotatecnica, \segundoautor, \& \terceiroautor%
+                \else \ifnum\value{numerodeautores}=4 \autornotatecnica, \segundoautor, \terceiroautor, \& \quartoautor%
+                    \fi \fi \fi \fi
+    }
 
-\vfill
+    \vfill
 
-%Numero da nota técnica - Editar no arquivo info.tex
-\Large \numeronotatecnica
+    %Numero da nota técnica - Editar no arquivo info.tex
+    \Large \numeronotatecnica%
 
-%Data da nota técnica - Editar no arquivo info.tex
-\Large \datanotatecnica
+    %Data da nota técnica - Editar no arquivo info.tex
+    \Large \datanotatecnica%
 
 \end{center}
