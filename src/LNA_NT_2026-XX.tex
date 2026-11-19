@@ -19,7 +19,7 @@
 
 %%% Tabela de conteúdos %%%
 \tableofcontents
-\listoffigures
+%\listoffigures
 %\listoftables
 
 %\newpage
@@ -28,7 +28,7 @@
 \input{XX/acron_defs.tex}
 
 %Escopo do documento
-\onehalfspacing
+\onehalfspacing%
 %\input{XX/escopo.tex}
 
 
@@ -42,7 +42,11 @@
 % Referências bibliográficas - obrigatório
 \renewcommand{\baselinestretch}{1}
 \setlength\bibitemsep{12pt}
-\printbibliography[heading=bibintoc,title={Referências}]
+\ifnum\value{linguagemdocumento}=1
+    \printbibliography[heading=bibintoc,title={Referências}]
+\else \ifnum\value{linguagemdocumento}=2
+        \printbibliography[heading=bibintoc,title={References}]
+    \fi \fi
 
 %Bibliografia da nota técnica
 %\newpage

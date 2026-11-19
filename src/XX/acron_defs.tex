@@ -1,10 +1,15 @@
 % Acronimos e definicoes
-\section*{Acrônimos e definições}
-\addcontentsline{toc}{section}{Acrônimos e definições}
+\ifnum\value{linguagemdocumento}=2
+    \section*{Acronyms and definitions}
+    \addcontentsline{toc}{section}{Acronyms and definitions}
+\else \ifnum\value{linguagemdocumento}=1
+        \section*{Acrônimos e definições}
+        \addcontentsline{toc}{section}{Acrônimos e definições}
+    \fi \fi
 
 \noindent
 {\renewcommand{\arraystretch}{1.25}% Espaçamento vertical entre as linhas
-\begin{tabularx}{0.96\linewidth}{@{}>{\raggedright\arraybackslash}p{0.12\linewidth} >{\raggedright\arraybackslash}X@{}}
-\textbf{LNA} & Laboratório Nacional de Astrofísica \\
-\textbf{OPD} & \textsl{Observatório Pico dos Dias} \\
-\end{tabularx}}
+    \begin{tabularx}{0.96\linewidth}{@{}>{\raggedright\arraybackslash}p{0.12\linewidth} >{\raggedright\arraybackslash}X@{}}
+        \textbf{LNA} & Laboratório Nacional de Astrofísica \\
+        \textbf{OPD} & \textsl{Observatório Pico dos Dias} \\
+    \end{tabularx}}

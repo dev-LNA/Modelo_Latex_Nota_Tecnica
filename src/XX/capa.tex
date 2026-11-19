@@ -1,36 +1,71 @@
 %NÃO EDITÁVEL
-%Primeira página
+
+%Primeira pagina
 \thispagestyle{capa}
 \hfill
 \vspace{2cm}
 
+%Português
+\ifnum\value{linguagemdocumento}=1
+    \begin{center}
+        {\Large Notas Técnicas do Laboratório Nacional de Astrofísica}
 
-\begin{center}
-    {\Large Notas Técnicas do Laboratório Nacional de Astrofísica}
+        \vspace{6cm}
 
-    \vspace{6cm}
+        %Título da nota técnica - Editar no arquivo info.tex
+        {\LARGE \textbf{\titulonotatecnica}}
 
-    %Título da nota técnica - Editar no arquivo info.tex
-    {\LARGE \textbf{\titulonotatecnica}}
+        \hfill
 
-    \hfill
+        \vspace{1cm}
 
-    \vspace{1cm}
+        %Autor da nota técnica - Editar no arquivo info.tex
+        {\large \ifnum\value{numerodeautores}=1 \autornotatecnica%
+            \else \ifnum\value{numerodeautores}=2 \autornotatecnica, \& \segundoautor%
+                \else \ifnum\value{numerodeautores}=3 \autornotatecnica, \segundoautor, \& \terceiroautor%
+                    \else \ifnum\value{numerodeautores}=4 \autornotatecnica, \segundoautor, \terceiroautor, \& \quartoautor%
+                        \fi \fi \fi \fi
+        }
 
-    %Autor da nota técnica - Editar no arquivo info.tex
-    {\large \ifnum\value{numerodeautores}=1 \autornotatecnica%
-        \else \ifnum\value{numerodeautores}=2 \autornotatecnica, \& \segundoautor%
-            \else \ifnum\value{numerodeautores}=3 \autornotatecnica, \segundoautor, \& \terceiroautor%
-                \else \ifnum\value{numerodeautores}=4 \autornotatecnica, \segundoautor, \terceiroautor, \& \quartoautor%
-                    \fi \fi \fi \fi
-    }
+        \vfill
 
-    \vfill
+        %Numero da nota técnica - Editar no arquivo info.tex
+        \Large \numeronotatecnica%
 
-    %Numero da nota técnica - Editar no arquivo info.tex
-    \Large \numeronotatecnica%
+        %Data da nota técnica - Editar no arquivo info.tex
+        \Large \datanotatecnica%
 
-    %Data da nota técnica - Editar no arquivo info.tex
-    \Large \datanotatecnica%
+    \end{center}
+\fi
 
-\end{center}
+%Ingles
+\ifnum\value{linguagemdocumento}=2
+    \begin{center}
+        {\Large Technical Notes of the National Laboratory of Astrophysics}
+
+        \vspace{6cm}
+
+        %Título da nota técnica - Editar no arquivo info.tex
+        {\LARGE \textbf{\titulonotatecnica}}
+
+        \hfill
+
+        \vspace{1cm}
+
+        %Autor da nota técnica - Editar no arquivo info.tex
+        {\large \ifnum\value{numerodeautores}=1 \autornotatecnica%
+            \else \ifnum\value{numerodeautores}=2 \autornotatecnica, \& \segundoautor%
+                \else \ifnum\value{numerodeautores}=3 \autornotatecnica, \segundoautor, \& \terceiroautor%
+                    \else \ifnum\value{numerodeautores}=4 \autornotatecnica, \segundoautor, \terceiroautor, \& \quartoautor%
+                        \fi \fi \fi \fi
+        }
+
+        \vfill
+
+        %Numero da nota técnica - Editar no arquivo info.tex
+        \Large \numeronotatecnica%
+
+        %Data da nota técnica - Editar no arquivo info.tex
+        \Large \datanotatecnica%
+    \end{center}
+\fi

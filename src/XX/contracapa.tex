@@ -1,73 +1,147 @@
 \newpage
+\ifnum\value{linguagemdocumento}=1
 
-\begin{center}
+    \begin{center}
 
-    \hfill
+        \hfill
 
-    \vspace{1cm}
+        \vspace{1cm}
 
-    {\Large \textbf{\titulonotatecnica}}
+        {\Large \textbf{\titulonotatecnica}}
 
-    \hfill
-    \vspace{.5cm}
+        \hfill
+        \vspace{.5cm}
 
-    {\large \ifnum\value{numerodeautores}=1 \autornotatecnica\textsuperscript{1} %email apenas do primeiro autor 
-        \else \ifnum\value{numerodeautores}=2 \autornotatecnica\textsuperscript{1}, \&  \segundoautor%
-            \else \ifnum\value{numerodeautores}=3 \autornotatecnica\textsuperscript{1}, \segundoautor, \& \terceiroautor%
-                \else \ifnum\value{numerodeautores}=4 \autornotatecnica\textsuperscript{1}, \segundoautor, \terceiroautor, \& \quartoautor%
+        {\large \ifnum\value{numerodeautores}=1 \autornotatecnica\textsuperscript{1} %email apenas do primeiro autor 
+            \else \ifnum\value{numerodeautores}=2 \autornotatecnica\textsuperscript{1}, \&  \segundoautor%
+                \else \ifnum\value{numerodeautores}=3 \autornotatecnica\textsuperscript{1}, \segundoautor, \& \terceiroautor%
+                    \else \ifnum\value{numerodeautores}=4 \autornotatecnica\textsuperscript{1}, \segundoautor, \terceiroautor, \& \quartoautor%
+                        \fi
                     \fi
                 \fi
             \fi
-        \fi
-    }
+        }
 
-    \hfill
-    \vspace{.5cm}
+        \hfill
+        \vspace{.5cm}
 
-    \(^1\)\textit{\filiacaoautordanota, \emailautor}
+        \(^1\)\textit{\filiacaoautordanota, \emailautor}
 
-    \vspace{1.5cm}
+        \vspace{1.5cm}
 
-    \begin{minipage}{12cm}
-        \textbf{Resumo:} \resumonotatecnica.%
-    \end{minipage}
+        \begin{minipage}{12cm}
+            \textbf{Resumo:} \resumonotatecnica.%
+        \end{minipage}
 
-    \vspace{1.5cm}
+        \vspace{1.5cm}
 
-    \begin{minipage}{12cm}
-        \textbf{Abstract:} \abstractnotatecnica.%
-    \end{minipage}
-
-
-    \vspace{1.5cm}
-
-    \begin{minipage}{12cm}
-        \textbf{Palavras-chave/\textit{keywords}:} \keywordsnotatecnica.%
-    \end{minipage}
-
-    \vspace{1.5cm}
-
-    \begin{minipage}{12cm}
-        \textbf{Submetido em:}  \datanotatecnica.%
-    \end{minipage}
-
-    \vspace{1cm}
-
-    \begin{minipage}{12cm}
-        \textbf{Revisado por:} \\
-        {\raggedleft%
-            \renewcommand{\arraystretch}{1.0}%
-            \begin{tabular}{ll}
-                \hspace{.8cm} &                \\
-                \hspace{.8cm} & {\revisorum}   \\
-                \hspace{.8cm} &                \\
-                \hspace{.8cm} & {\revisordois} \\
-                \hspace{.8cm} &                \\
-                \hspace{.8cm} & {\revisortres} \\
-            \end{tabular}}
-    \end{minipage}
+        \begin{minipage}{12cm}
+            \textbf{Abstract:} \abstractnotatecnica.%
+        \end{minipage}
 
 
-\end{center}
+        \vspace{1.5cm}
+
+        \begin{minipage}{12cm}
+            \textbf{Palavras-chave/\textit{keywords}:} \keywordsnotatecnica.%
+        \end{minipage}
+
+        \vspace{1.5cm}
+
+        \begin{minipage}{12cm}
+            \textbf{Submetido em:}  \datanotatecnica.%
+        \end{minipage}
+
+        \vspace{1cm}
+
+        \begin{minipage}{12cm}
+            \textbf{Revisado por:} \\
+            {\raggedleft%
+                \renewcommand{\arraystretch}{1.0}%
+                \begin{tabular}{ll}
+                    \hspace{.8cm} &                \\
+                    \hspace{.8cm} & {\revisorum}   \\
+                    \hspace{.8cm} &                \\
+                    \hspace{.8cm} & {\revisordois} \\
+                    \hspace{.8cm} &                \\
+                    \hspace{.8cm} & {\revisortres} \\
+                \end{tabular}}
+        \end{minipage}
+
+
+    \end{center}
+
+\else \ifnum\value{linguagemdocumento}=2
+
+        \begin{center}
+
+            \hfill
+
+            \vspace{1cm}
+
+            {\Large \textbf{\titulonotatecnica}}
+
+            \hfill
+            \vspace{.5cm}
+
+            {\large \ifnum\value{numerodeautores}=1 \autornotatecnica\textsuperscript{1} %email apenas do primeiro autor 
+                \else \ifnum\value{numerodeautores}=2 \autornotatecnica\textsuperscript{1}, \&  \segundoautor%
+                    \else \ifnum\value{numerodeautores}=3 \autornotatecnica\textsuperscript{1}, \segundoautor, \& \terceiroautor%
+                        \else \ifnum\value{numerodeautores}=4 \autornotatecnica\textsuperscript{1}, \segundoautor, \terceiroautor, \& \quartoautor%
+                            \fi
+                        \fi
+                    \fi
+                \fi
+            }
+
+            \hfill
+            \vspace{.5cm}
+
+            \(^1\)\textit{\filiacaoautordanota, \emailautor}
+
+            \vspace{1.5cm}
+
+            \begin{minipage}{12cm}
+                {\textbf{Abstract:}  Include here the abstract of your work.}%
+            \end{minipage}
+
+            \vspace{1.5cm}
+
+            \begin{minipage}{12cm}
+                \textbf{Resumo:} \resumonotatecnica.%
+            \end{minipage}
+
+            \vspace{1.5cm}
+
+            \begin{minipage}{12cm}
+                \textbf{keywords/Palavras-chave:} \keywordsnotatecnica.%
+            \end{minipage}
+
+            \vspace{1.5cm}
+
+            \begin{minipage}{12cm}
+                \textbf{Submitted in:}  \datanotatecnica.%
+            \end{minipage}
+
+            \vspace{1cm}
+
+            \begin{minipage}{12cm}
+                \textbf{Revised by:} \\
+                {\raggedleft%
+                    \renewcommand{\arraystretch}{1.0}%
+                    \begin{tabular}{ll}
+                        \hspace{.8cm} &                \\
+                        \hspace{.8cm} & {\revisorum}   \\
+                        \hspace{.8cm} &                \\
+                        \hspace{.8cm} & {\revisordois} \\
+                        \hspace{.8cm} &                \\
+                        \hspace{.8cm} & {\revisortres} \\
+                    \end{tabular}}
+            \end{minipage}
+
+
+        \end{center}
+
+    \fi \fi
 
 \newpage

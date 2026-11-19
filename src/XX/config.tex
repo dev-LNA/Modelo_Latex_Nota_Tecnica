@@ -1,7 +1,11 @@
 \usepackage[utf8]{inputenc}
-\usepackage[brazil]{babel}
-%%%Fontes 
+\ifnum\value{linguagemdocumento}=1
+  \usepackage[english,brazil]{babel}
+\else \ifnum\value{linguagemdocumento}=2
+    \usepackage[brazil,english]{babel}
+  \fi \fi
 \usepackage[T1]{fontenc}  %%%Codificação de fontes - ç,ã,é ... etc.
+%%%Fontes 
 %\usepackage{lmodern} %%% Fonte padrão Computer Modern do LaTeX
 \usepackage[sfdefault]{FiraSans} %% Fira Sans da marca do LNA
 \renewcommand{\familydefault}{\sfdefault} %% Fira Sans da marca do LNA
